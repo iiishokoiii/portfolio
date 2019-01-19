@@ -1,2 +1,3 @@
 # portfolio
-ポートフォリオサイト
+URL: https://o-d-a-web.com/portfolio/
+
