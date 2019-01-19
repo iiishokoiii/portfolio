@@ -1,0 +1,288 @@
+﻿<!doctype html>
+<html>
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-116392919-2"></script>
+<script type="text/javascript" src="./js/ga.js"></script>
+<meta charset="utf-8">
+<title>【ドクターズ東京】インプラント、審美歯科の名医・専門家ドクターチーム</title>
+<meta name="description" content="ドクターズ東京は世界一受けたい医療を共に目指す名医・専門家ドクターチームです。インプラント、審美歯科に関する無料相談、医療関係者向け勉強会を行っております。提携出張先クリニックも募集しております。詳細はお問い合わせフォームよりご連絡下さい。">
+<link rel="icon" href="./img/favicon.ico" type="image/x-icon" />
+<link href="css/index.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+.slick-box {
+}
+/*home*/
+.slick-box li {
+	float: left;
+	list-style-type: none;
+}
+#news {
+	margin: 100px auto;
+}
+#home ・ #menu {
+	margin-top: 50px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 50px;
+	width: 80%;
+	display: block;
+}
+
+#news table {
+	margin: 20PX AUTO;
+	border-collapse: collapse;
+	border-spacing: 0px 0px;
+	border-top: 1px solid #202020;
+	border-bottom: 1px solid #000000;
+}
+#news .responsive-table {
+	padding: 10px;
+}
+#news .responsive-table td {
+	margin-right: 0;
+	margin-left: 0;
+	margin-bottom: 5px;
+	padding-top: 8px;
+	padding-right: 0px;
+	padding-left: 5px;
+	padding-bottom: 8px;
+}
+#news .responsive-table .new  {
+	color: #FF0004;
+	font-size: x-small;
+	padding-right: 8px;
+}
+	</style>
+<link href="css/slick.css" rel="stylesheet" type="text/css">
+<link href="css/slick-theme.css" rel="stylesheet" type="text/css">
+<link href="css/gotop.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="js/slick.min.js"></script>
+	<script type="text/javascript">
+		$(function() {
+	$('.slick-box').slick({
+		dots: true,
+		centerMode: true,
+		infinite: true,
+		speed: 7000,
+		autoplay: true,
+		autoplaySpeed: 0,
+		cssEase: 'linear',
+		slidesToShow: 2,
+  		slidesToScroll: 1,
+	}); 
+});
+</script>
+<script>
+	$(function(){
+		$("#nav-toggle").click(function(){
+			$(this).next().slideToggle();
+			$(this).toggleClass("active");	
+		})
+	});
+</script>
+<script>
+	$(function(){
+		$("#nav-toggle2").click(function(){
+			$(this).next().slideToggle();
+		})
+	});
+</script>
+<script>
+$(document).ready(function(){
+ 
+    $(".gotop").hide();
+ 
+    $(window).on("scroll", function() {
+ 
+        if ($(this).scrollTop() > 100) {
+         $('.gotop').slideDown("fast");
+        } else {
+            $('.gotop').slideUp("fast");
+        }
+       
+        scrollHeight = $(document).height(); 
+        scrollPosition = $(window).height() + $(window).scrollTop(); 
+        footHeight = $("footer").innerHeight();
+                 
+        if ( scrollHeight - scrollPosition  <= footHeight ) {
+            $(".gotop").css({
+                "position":"absolute",
+                "bottom": footHeight
+            });
+        } else {
+            $(".gotop").css({
+                "position":"fixed",
+                "bottom": "0px"
+            });
+        }
+    });
+ 
+    $('.gotop a').click(function () {
+        $('body,html').animate({
+        scrollTop: 0
+        }, 500);
+        return false;
+     });
+});
+</script>
+
+<script type="text/javascript" src="js/jquery.smoothscroll.js"></script>
+<script>
+
+  $.fn.responsiveTable = (function() {
+    var $window = $(window);
+    return function() {
+      var $el = this;
+      var $table = this.find('>table');
+      var onResize = function() {
+        var width = $table.outerWidth();
+        var height = $table.outerHeight();
+        var $parent = $el.parent();
+        var containerWidth = $parent.width();
+        var ratio = containerWidth / width;
+        if (ratio < 1) {
+          $el.height(height * ratio);
+          $table.css('transform', 'scale(' + ratio + ')');
+        } else {
+          $el.height('');
+          $table.css('transform', '');
+        }
+      };
+      $table.css('transformOrigin', '0 0');
+      $window.on('resize', onResize);
+      onResize();
+    };
+  }());
+
+  $(function() {
+    $('.responsive-table').responsiveTable();
+  });
+
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body id="all">
+<header>
+<div class="inner">
+<h1><a href="index.html"><img src="img/logo.png" alt="HOMEへのリンク" width="528" height="99" class="logo"/></a></h1>
+<h2 class="catch">“We make your beautiful smile.”</h2>
+<h2 class="catch2">世界一受けたい医療を共に目指すインプラント、<br>審美歯科の専門家ドクターチームです。<br>
+最高の医療を提供し、あなたの美しい笑顔を約束します。</h2>
+<nav id="header-nav">
+<div id="nav-toggle">
+	<span></span>			
+	<span></span>			
+	<span></span>			
+</div>
+<ul>
+<li><a class="current" href="index-doctor.html">HOME</a></li>
+<li><a href="about-doctor.html">About</a></li>
+<li class="nav-study-main"><a href="study-doctor.html">勉強会</a></li>
+<li><a href="service-doctor.html">診療案内</a></li>
+<li><a href="clinic-doctor.html">提携医療機関</a></li>
+<li class="nav-study"><a href="study-doctor.html">勉強会（医療従事者向け）</a></li>
+<li><a href="contact-doctor.html">お問合せ</a></li>
+</ul>
+</nav>
+<div class="right">
+<p class="form"><a href="contact-doctor.html#contact2">お問い合わせフォームへ</a></p>
+<p class="bottom"><a href="index.html">患者様向け</a></p>
+<p class="current bottom2"><a href="index-doctor.html">医療従事者向け</a></p>
+</div>
+</div>
+</header>
+<p class="mainimage"><img src="img/main-image.jpg" width="4000" height="2667" alt=""/></p>
+<div class="main" id="home">
+<!--ここから下を差し替える-->
+<div class="sidenav">
+	<section id="news">
+	<h2>news</h2>
+	<div class="responsive-table">
+	<table width="900" border="0" style="min-width: 640px">
+  <tbody>
+    <tr>
+      <td width="50" align="right" class="new">NEW!</td>
+      <td width="80">2018.2.20</td>
+    <td width="600">専用サイトオープン致しました！</td>
+    </tr>
+    <tr>
+    <td width="50" align="right" class="new">&nbsp;</td>
+    <td width="80">2018.2.18</td>
+    <td width="600">◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯</td>
+    </tr>
+    <tr>
+    <td width="50" align="right" class="new">&nbsp;</td>
+    <td width="80">2018.2.16</td>
+    <td width="600">◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯</td>
+    </tr>
+  </tbody>
+</table>
+	</div>
+	</section>
+<ul class="slick-box" id="slide">
+    <li><img src="img/home-main1.jpg" width="490" height="244" alt="メイン画像1"/></li>
+    <li><img src="img/home-main2.jpg" width="490" height="244" alt="メイン画像2"/></li>
+    <li><img src="img/home-main3.jpg" width="490" height="244" alt="メイン画像3"/></li>
+    <li><img src="img/home-main4.jpg" width="490" height="244" alt="メイン画像4"/></li>
+    <li><img src="img/home-main5.jpg" width="490" height="244" alt="メイン画像5"/></li>
+  </ul>
+
+  <div id="menu">
+  <p class="banner-l"><a href="about-doctor.html"><img src="img/home-banner-mission.png" width="600" height="250" alt="ﾄﾞｸﾀｰｽﾞ東京の理念"/></a></p>
+	<p class="banner-s"><a href="about-doctor.html"><img src="img/home-banner-mission-res.png" width="400" height="250" alt=""/></a></p>
+	<p><a href="service.html"><img src="img/home-banner-info.png" width="400" height="250" alt="治療のご案内"/></a></p>
+	<p><a href="contact-doctor.html"><img src="img/home-banner-faq.png" width="400" height="250" alt="お問い合わせ"/></a></p>
+	<p class="banner-l"><a href="study-doctor.html"><img src="img/home-banner-study.png" width="600" height="250" alt="医療従事者向け 勉強会"/></a></p>
+	<p class="banner-s"><a href="study-doctor.html"><img src="img/home-banner-study-res.png" width="400" height="250" alt=""/></a></p>
+  </div>
+
+<!--ここから下を差し替える-->
+</div>
+<div id="sub"><p class="gotop"><a href="#all">ページトップへ</a></p></div>
+ </div>
+<footer>
+<div class="inner">
+<p class="form"><a href="contact-doctor.html#contact2">お問い合わせフォームへ</a></p>
+<div class="text">
+<p>&rtrif;<a href="index.html">HOME</a></p>
+<p>&rtrif;<a href="about-doctor.html">DRs TOKYOのご紹介</a></p>
+<p>&rtrif;<a href="clinic-doctor.html">提携医療機関のご紹介</a></p>
+<p>&rtrif;<a href="contact-doctor.html">お問い合わせフォーム</a></p>
+<p>&rtrif;言語選択<br> 　<a href="#">japan</a> 　<a href="#">english</a></p><p>&rtrif;<a href="privacy.html">個人情報保護方針</a></p>
+</div>
+<div class="text2">
+<p id="nav-toggle2">&rtrif;診療案内</p>
+<div class="service-list">
+<ul>
+<li><a href="service-doctor.html#implant">インプラント部門 </a></li>
+<li><a href="#">審美歯科部門</a></li>
+<li><a href="#">歯周病部門</a></li>
+<li><a href="#">根管治療部門</a></li>
+<li><a href="#">矯正歯科部門</a></li>
+<li><a href="#">小児歯科部門</a></li>
+</ul>
+<ul>
+<li><a href="#">嚙み合わせ部門　</a></li>
+<li><a href="#">口腔内科部門</a></li>
+<li><a href="#">口腔外科部門</a></li>
+<li><a href="#">入れ歯部門</a></li>
+<li><a href="service-doctor.html#laser">レーザー部門</a></li>
+</ul>
+</div>
+</div>
+<div class="text">
+<p>&rtrif;<a href="study-doctor.html#study2">ブログ</a></p>
+<p>&rtrif;<a href="study-doctor.html#study3">Instagram</a></p>
+<p>&rtrif;<a href="#">医療従事者向け情報</a></p>
+<ul>
+<li><a href="study-doctor.html#study3">勉強会</a></li>
+</ul>
+</div>
+<p class="copyright">Copyright &copy; 2018 ドクターズ東京</p>
+</div>
+</footer>
+</body>
+</html>

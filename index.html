@@ -1,0 +1,273 @@
+<!doctype html>
+<html>
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-116392919-2"></script>
+<script type="text/javascript" src="./js/ga.js"></script>
+<!-- title, discription -->
+<meta charset="utf-8">
+<title>Portfollio| 織田 翔子</title>
+<!--favicon-->
+<link rel="icon" type="image/vnd.microsoft.icon" href="./portfoliopages/img/favicon.ico">
+<!--css-->
+<link href="./css/portfolio-style.css" rel="stylesheet" type="text/css">
+<link href="./js/lightbox.css" rel="stylesheet" type="text/css">
+<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+<!--javascript-->
+<script type="text/javascript" src="./js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="./js/jquery.smoothscroll.js"></script>
+<script type="text/javascript" src="./js/lightbox.min.js"></script>
+<script>
+<!--toggle-menu-->
+	$(function(){
+		$("#toggle-menu").click(function(){
+            console.log("click");
+			$(".nav").slideToggle();
+			$(this).toggleClass("active");	
+		})
+	});
+    <!--scroll-btn-->
+    $(function() {
+        var topBtn = $('.pagetop');    
+        topBtn.hide();
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 80) {
+                topBtn.fadeIn();
+            } else {
+                topBtn.fadeOut();
+            }
+        });
+    });
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body id="all">
+<header class="clearfix">
+<div class="inner">
+  <h1 class="logo"><a href="index.html"><img src="./portfoliopages/img/logo.png" width="144" height="75" alt="Portfollio Oda Shoko ポートフォリオ 織田 翔子"/></a></h1>
+</div>
+<ul class="nav clearfix">
+<li><a href="#about"><span class="hover"></span>About</a></li>
+<li><a href="#news"><span class="hover"></span>News</a></li>
+	<li><a href="#website"><span class="hover"></span>Web Site</a></li>
+	<li><a href="#others"><span class="hover"></span>Others</a></li>
+</ul>
+<div id="toggle-menu">
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+</header>
+
+<main>
+<div class="inner">
+<section class="clearfix" id="about">
+  <h2>About</h2>
+  <p>ご覧いただきありがとうございます。<br>
+    現在、職業訓練校を利用しながらWeb制作の勉強をしております。<br>
+    実務実績はなく、独学で1ヵ月、学校に通いだして3ヵ月になります。<br>
+    学校の課題や自主制作で作成したものをまとめました。<br><br>
+    使用言語，Application<br>
+    ・HTML/ CSS/ jQuery<br>
+    ・Photoshop/ Dreamweaver/ Illustrator </p>
+</section>
+	
+<section class="clerfix" id="news">
+  <h2>News</h2>
+    <div class="inner clearfix">
+        <p><span class="date">2018/03/19</span><span class="text">Webサイトの作品を追加しました。</span></p>
+        <p><span class="date">2018/03/08</span><span class="text">ポートフォリオサイトをリニューアルしました。</span></p>
+    </div>
+</section>
+	
+<section class="clerfix website" id="website">
+  <h2>Web Site</h2>
+  
+  <div class="clearfix" id="shinmeisha">
+	<div class="title clearfix">
+    <h3>所澤神明社</h3>
+    <p class="site-subtitle">所澤神明社のテストサイト</p>
+    <p class="site-date">2018/03/27</p>
+	</div>
+	<div class="inner clearfix">
+    <p class="photo"><a href="./shinmeisha/index.html" target="_blank"><img src="portfoliopages/img/thum-shinmeisha.jpg" alt="所澤神明社"><span class="img-hover">view<br>more</span></a></p>
+    <p class="text">
+      制作時間：17日<br>
+      制作ページ：TOPページ + 下層ページ x9<br>
+      Application: Ps/Dw/Text-Editor<br><br>
+      訓練校の企業実習の課題として制作させていただいたテストサイトです。<br>既存サイトのニューアルとして、サイト構成の検討から、デザイン、現地での素材写真の撮影、コーディングを行いました。<br>
+      <span class="tag">レスポンシブ対応</span><br>
+    </p>
+	</div>
+  </div>
+  
+  <div class="clearfix" id="bakerycafe">
+	<div class="title clearfix">
+    <h3>ベーカリーカフェ</h3>
+    <p class="site-subtitle">架空のカフェの紹介サイト</p>
+    <p class="site-date">2018/03/15</p>
+	</div>
+	<div class="inner clearfix">
+    <p class="photo"><a href="./bakerycafe/index.html" target="_blank"><img src="./portfoliopages/img/thum-bakerycafe.jpg" alt="ベーカリーカフェ"><span class="img-hover">view<br>more</span></a></p>
+    <p class="text">
+      制作時間：20H<br>
+      制作ページ：TOPページ<br>
+      Application: Ps/Dw/Text-Editor<br><br>
+      デザインは既存サイトを参考にしました。<br>レスポンシブ対応、jQueyによる表示内容の切り替え、などを取り入れました。<br>
+      <span class="tag">レスポンシブ対応</span><br>
+    </p>
+	</div>
+  </div>
+
+  <div class="clearfix" id="tonkatu">
+	<div class="title clearfix">
+    <h3>とんかつサイト</h3>
+    <p class="site-subtitle">都内のとんかつの紹介サイト</p>
+    <p class="site-date">2018/02/27</p>
+  	</div>
+	<div class="inner clearfix">
+    <p class="photo"><a href="../tonkatu/index.html" target="_blank"><img src="./portfoliopages/img/thum-tonkatu.jpg" alt="とんかつサイト"/><span class="img-hover">view<br>more</span></a></p>
+    <p class="text">
+      制作時間：25H<br>
+      制作ページ：TOPページ + 下層ページ x5<br>
+      Application: Ps/Dw/Text-Editor<br><br>
+      訓練校の個人制作として作成しました。<br>レスポンシブ対応、CSSによるホバーエフェクト、jQueyによるスクロールエフェクトなどを取り入れました。<br>
+      <span class="tag">レスポンシブ対応</span><br>
+    </p>
+      </div>
+  </div>
+
+  <div class="clearfix" id="wonderbulid">
+	<div class="title clearfix">
+    <h3>ワンダービルド</h3>
+    <p class="site-subtitle">北海道物産店を運営する企業の紹介サイト</p>
+    <p class="site-date">2018/01/21</p>
+	</div>
+	<div class="inner clearfix">
+    <p class="photo"><a href="./wonderbuild/index.html" target="_blank"><img src="./portfoliopages/img/thum-wonderbuld.jpg" alt="ワンダービルド"/><span class="img-hover">view<br>more</span></a></p>
+    <p class="text">
+      制作時間：7H<br>
+      制作ページ：ランディングページ<br>
+      Application: Ps/Dw/Text-Editor<br>
+		</p>
+	</div>
+  </div>
+
+</section>
+    
+<section class="clerfix website" id="others">
+  <h2>Others</h2>
+  <div class="clearfix" id="doctors">
+	<div class="title clearfix">
+    <h3>グループ制作課題</h3>
+        <p class="site-subtitle">歯科医療チームの紹介サイト</p>
+    <p class="site-date">2018/02/21</p>
+  	</div>
+	<div class="inner clearfix">
+        <p class="photo"><a href="./doctors-tokyo/index-doctor.html" target="_blank"><img src="./portfoliopages/img/thum-drstokyo.jpg" alt="ドクターズ東京"/><span class="img-hover">view<br>more</span></a></p>
+    <p class="text">
+      制作時間：45H<br>
+      Application: Ps/Dw/Text-Editor<br><br>訓練校グループ制作として作成しました。共通部分と下層ページ x5 のコーディングと全体組み上げ、その他、サイト構成検討、バナー作成などを担当しました。<br>
+      <span class="tag">レスポンシブ対応</span><br>
+    </p>
+	</div>
+  </div>
+    
+  <div class="clearfix" id="logo">
+	<div class="title clearfix">
+    <h3>ロゴ作成</h3>
+        <p class="site-subtitle">歯科医療チーム"DRs TOKYO"のロゴ</p>
+    <p class="site-date">2018/01/29</p>
+  	</div>
+	<div class="inner clearfix">
+    <p class="photo"><img src="./portfoliopages/img/thum-circle-dr.jpg" alt="ドクターズ東京ロゴ"/><span class="img-hover">view<br>more</span></p>
+    <p class="text">
+      制作時間：1H<br>
+      Application: Ai<br>
+		</p>
+	</div>
+  </div>  
+    
+  <div class="clearfix">
+	<div class="title clearfix">
+    <h3>キョウリツ・デイサービス</h3>
+    <p class="site-subtitle">デイサービスセンターの紹介サイト</p>
+    <p class="site-date">2018/01/17</p>
+  	</div>
+	<div class="inner clearfix">
+    <p class="photo"><a href="./kyouritz-dayservice/index.html" target="_blank"><img src="./portfoliopages/img/thum-dayservice.jpg" alt="デイサービス"/><span class="img-hover">view<br>more</span></a></p>
+    <p class="text">
+      制作時間：20H<br>
+      制作ページ：TOPページ + 下層5ページ x5<br>
+      Application: Ps/Dw/Text-Editor<br>
+		</p>
+	</div>
+  </div>
+
+  <div class="clearfix" id="">
+	<div class="title clearfix">
+    <h3>アンコールワット</h3>
+    <p class="site-subtitle">旅行サイトの特集ページ</p>
+    <p class="site-date">2018/12/21</p>
+  	</div>
+	<div class="inner clearfix">
+    <p class="photo"><a href="./angkor-wat/index.html" target="_blank"><img src="./portfoliopages/img/thum-anchorwat.jpg" alt="アンコールワット"/><span class="img-hover">view<br>more</span></a></p>
+    <p class="text">
+      制作時間：7H<br>
+      制作ページ：ランディングページ<br>
+      Application: Ps/Dw/Text-Editor<br>
+		</p>
+	</div>
+  </div>
+    
+  <div class="clearfix" id="ability5">
+	<div class="title clearfix">
+    <h3>コーディング課題</h3>
+        <p class="site-subtitle">不動産の広告サイト</p>
+    <p class="site-date">2018/01/18</p>
+  	</div>
+	<div class="inner clearfix">
+        <p class="photo"><a href="./ability5/index.html" target="_blank"><img src="./portfoliopages/img/thum-circle-ablity5.jpg" alt="ability5"/><span class="img-hover">view<br>more</span></a></p>
+    <p class="text">
+      制作時間：3H<br>
+      Application: Ps/Dw<br><br>
+      授業課題として、Photoshopのカンプをもとに、画像切り出しからコーディングまでを行いました。
+		</p>
+	</div>
+  </div>  
+
+  <div class="clearfix" id="">
+	<div class="title clearfix">
+    <h3>デザインカンプ作成</h3>
+    <p class="site-subtitle">ハンドメイドショップを併設したカフェの紹介サイト</p>
+    <p class="site-date">2018/12/15</p>
+  	</div>
+	<div class="inner clearfix">
+    <p class="photo"><a href="./portfoliopages/img/cozychat2.png" onclick="ga('send', 'pageview', '/cozychat2.png');" data-lightbox="lightbox"><img src="./portfoliopages/img/thum-cozychat2.jpg" alt="ハンドメイドカフェ2"/><span class="img-hover">view<br>more</span></a></p>
+    <p class="text">
+      制作時間：7H<br>
+      制作ページ：TOPページ(デザインカンプのみ)<br>
+      Application: Ps<br>
+		</p>
+	</div>
+	<div class="inner clearfix">
+    <p class="photo"><a href="./portfoliopages/img/cozychat.png" onclick="ga('send', 'pageview', '/cozychat.png');" data-lightbox="lightbox"><img src="./portfoliopages/img/thum-cozychat1.jpg" alt="ハンドメイドカフェ1"/><span class="img-hover">view<br>more</span></a></p>
+    <p class="text">
+      制作時間：6H<br>
+      制作ページ：TOPページ(デザインカンプのみ)<br>
+      Application: Ps<br>
+		</p>
+		</div>
+	</div>
+    
+</section>
+</div>
+<p class="pagetop"><a href="#all"><i class="fas fa-arrow-circle-up"></i></a></p>
+</main>
+<footer>
+<p>&copy;2018 Shoko.Oda</p>
+</footer>
+	
+</body>
+</html>

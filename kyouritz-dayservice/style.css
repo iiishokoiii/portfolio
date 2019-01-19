@@ -1,0 +1,408 @@
+@charset "utf-8";
+p, h1, h2, h3, h4, h5, ul, ol, body {
+  padding: 0;
+  margin: 0;
+}
+img {
+  border-style: none;
+  vertical-align: top;
+}
+body {
+  background-color: #fff;
+  color: #111;
+  font-family: "メイリオ", Meiryo,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",Osaka,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
+  line-height: 1.5;
+}
+h1, h2, h3{
+  font-family: "游ゴシック", Yu Gothic,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",Osaka,"MS PGothic",sans-serif;
+}
+header .inner, footer .inner, .content{
+    width: 1000px;
+    margin: 0 auto;
+}
+nav ul, footer ul{
+    list-style-type: none;
+}
+header .inner{
+    position: relative;
+}
+header .logo{
+    margin: 30px 0;
+    float: left;
+}
+header .text{
+    float: right;
+    margin-top: 35px;
+}
+header .text img{
+    float:left;
+}
+header .text p{
+    float:left;
+    font-size: 16px;
+    text-align: left;
+    margin: 0 0 5px 10px;
+}
+header .text .tel{
+    font-size: 22px;
+    color:#ed4b6a; 
+}
+hedear .text img{
+    padding-top: 20px;
+}
+a.btn{
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    color: #333;
+    background-color: #eee;
+    border-radius: 2px;
+    box-shadow: 3px 3px 3px #bbb;
+}
+a.btn:hover,a.btn:active{
+    background-color: #cbcbcb;
+    color: #000;
+}
+a.btn:hover{
+    box-shadow: 3px 3px 3px #aaa;
+    transition: 0.4s;
+}
+a.btn:active{
+    box-shadow: inset 0 2px 2px rgba(0,0,0, 0.2),0 0 0 #ccc;
+}
+header a.btn{
+    padding: 5px 15px;
+    clear: both;
+    font-size: 18px;
+    margin-top: 5px;
+}
+nav{
+    width: 100%;
+    background-color: #bfe39c;
+    background-color: #b6e3f5;
+    overflow: hidden;
+    padding: 10px 0;
+    font-size: 20px;
+    margin: 20px 0; 
+}
+nav ul{
+    list-style-type: none;
+    width: 970px;
+    margin: 0 auto;
+}
+nav li{
+    width: 130px;
+    border-radius: 14px;
+    float: left;
+    margin-left: 10px;
+}
+nav li:nth-of-type(1){
+    margin-left: 0;
+}
+nav li a{
+    display: block;
+    text-decoration: none;
+    padding: 8px 0;
+    text-align: center;
+    color: white;
+    background-color: #62c5eb;
+    border-radius: 10px;
+    box-shadow: 0 4px 4px rgba(82, 82, 82, 0.7);
+}
+nav li a:hover{
+    background-color: #28b5ef;
+    background-color: #28b5ef;
+    box-shadow: 0 4px 4px rgba(82, 82, 82, 0.7);
+    transition: 0.4s;
+}
+nav li a:active{
+    box-shadow: inset 0 4px 4px rgba(0,0,0, 0.2),0 0 0 #ccc;
+}
+h3{
+    padding: 20px 0 4px ;
+    border-bottom: 1px solid #b9dba0;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+h3:before{
+    content:"";
+    display: block;
+    height: 28px;
+    width: 0px;
+    background-image: url(img/img-title.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    float: left;
+}
+.content ol{
+    display: inline;
+}
+.content ol li{
+    display: inline;
+}
+.content ol li+li:before{
+    content:" | ";
+}
+.mainimage{
+    margin: 30px 0 0;
+    background-image: url(img/bg-main.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-color: #fff;
+    height: 450px;
+    overflow: hidden;
+}
+.mainimage h2{
+    float: right;
+    margin-top: 60px;
+    margin-right: 10px;
+    background-color: #d6e36f;
+    box-shadow: 10px 10px 0px rgba(204, 204, 204, 0.7);
+    animation: mainCopy 3s ease-in-out 0.4s 1 normal both;
+}
+@keyframes mainCopy{
+    0% {transform: scale(0.95,0.95);}
+    100% {transform: scale(1,1);}
+}
+.main{
+    width: 500px;
+    margin: 20px 0;
+    float: left;
+}
+.sub{
+    width: 440px;
+    margin: 20px 0;
+    float: right;
+}
+section{
+    clear: both;
+    margin-bottom: 60px;
+    overflow: hidden;
+}
+.news ul{
+    padding-left: 40px;   
+}
+.home .banner{
+    clear: both;
+    margin: 30px 0;
+}
+.home .banner a:hover img {
+	opacity: 0.9;
+}
+.contact a.btn{
+    width: 100%;
+    margin: 26px 0;
+    font-size: 22px;
+    padding: 10px 0;
+}
+.calender p{
+    text-align: center;
+}
+.calender .inner{
+    width:100%;
+    overflow:hidden;
+    margin: 20px auto;
+}
+.calender .inner .week p{
+    background-color: #f4e5eb;
+}
+
+.toplink{
+    text-align: right;
+    margin: 10px 10px 20px;
+    clear: both;
+}
+footer{
+    clear:both;
+    background-color: #d7eaf2;
+    font-size: 18px;
+    height: 480px;
+    overflow: hidden;
+}
+footer .inner2{
+    float: left;
+    padding: 20px 30px;
+    width: 210px;
+    background-color: #e4eef2;
+    height: 480px;
+}
+.toplink a{
+    color: #694c3a;
+}
+footer a:hover, .toplink a:hover{
+    color: #b17651;
+}
+footer .link{
+    padding: 15px 0;
+}
+footer .ul{
+    list-style: none;
+}
+footer li{
+   text-indent: 1em;
+}
+footer a{
+    text-decoration:none;
+    color:#333;
+}
+footer .inner3{
+    margin-top: 240px;
+    float: right;
+    border-top: 1px solid #111;
+}
+footer p.text, footer a.btn{
+    float: left;
+}
+footer .title{
+    font-size: 24px;
+    padding: 10px 0
+}
+footer a.btn{
+    float: left;
+    margin: 15px 0 0 20px;
+    font-size: 22px;
+    padding: 15px 20px;
+}
+footer .copy{
+    clear: both;
+    text-align: right;
+    padding: 50px 0;
+    width:100%;
+}
+/*contLact*/
+.contact form, .contact .inner{
+    width: 100%;
+    margin: 40px auto 0;
+}
+.contact .inner .text{
+    background-color: #e0ea91;
+    padding: 0 20px;
+    display: inline-block;
+    line-height: 50px;
+}
+.contact h4{
+    padding: 10px 0;
+}
+.contact .inner  p{
+    float: left;
+    margin: 0 20px 40px 0;
+}
+.contact form{
+    clear: both;
+}
+.contact form table{
+    background-color: #eee;
+    border: none;
+    width:100%;
+    margin-bottom: 40px;
+}
+.contact form tr:nth-of-type(2n){
+    background-color: #e4eac0;
+}
+.contact form td{
+    padding: 10px 10px;
+    border: none;
+}
+.contact form p.text{
+    margin: 0 0 40px;
+    height: 60px;
+    background-color: #eee;
+    padding: 20px;
+    overflow: auto;
+}
+.contact form .btn-submit{
+    display:block;
+    margin: 4px auto 20px;
+    font-size:20px;
+    color: #333;
+    background-color: #e0ea91;
+    border-radius: 2px;
+    padding: 10px 20px;
+}
+/*timetable*/
+.content{
+}
+.timetable .inner{
+    width: 800px;
+    margin-bottom: 80px;
+}
+.timetable h4{
+    font-size: 20px;
+    clear:both;
+    margin: 40px 0 20px;
+    margin-left: 0;
+}
+.timetable inner2, .timetable .icon{
+    clear: both;
+}
+.timetable .icon{
+    margin-left: 140px;
+    padding: 6px 0;
+}
+.timetable .title{
+    width: 240px;
+    background-color: #e0ea91;
+    padding: 10px 40px;
+    border-radius: 30px;
+    float: left;
+}
+.timetable .text{
+    float: left;
+    padding: 10px 40px; 
+    width: 380px;
+}
+.timetable .nav{
+    float: right;
+    width: 100px;
+}
+.timetable ul a{
+    font-size: 20px;
+    color: #111;
+}
+/*map*/
+.map .inner2{
+    background-color: #eee;
+    overflow: hidden;
+    clear: both;
+}
+.map .inner p{
+    width: 600px;
+    float: left;
+}
+.map .inner img{
+    float: left;
+    margin-left: 40px;
+    margin-bottom: 40px;
+}
+.map .inner2 p{
+    width: 800px;
+    margin: 20px auto;
+}
+/*about*/
+.about .box1{
+    width: 980px;
+    margin: 40px 10px 40px;
+}
+.about .box2{
+    width: 460px;
+    margin: 30px 20px ;
+    float: left;
+}
+.about h4{
+    padding: 10px 0;
+    border: 1px solid #333;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #333;
+}
+.about .photo{
+    clear: both;
+}
+.about .photo img{
+    float: left;
+    margin-left: 10px;
+}
+.about .photo img:nth-of-type(1){
+    margin-left: 20px;
+}

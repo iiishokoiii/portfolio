@@ -1,0 +1,357 @@
+<!doctype html>
+<html>
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-116392919-2"></script>
+<script type="text/javascript" src="./js/ga.js"></script>
+<meta charset="utf-8">
+<title>About｜インプラント、審美歯科の名医・専門家ドクターチーム【ドクターズ東京】</title>
+<meta name="description" content="ドクターズ東京は世界一受けたい医療を共に目指す名医・専門家ドクターチームです。インプラント、審美歯科に関する無料相談、医療関係者向け勉強会を行っております。提携出張先クリニックも募集しております。詳細はお問い合わせフォームよりご連絡下さい。">
+<link rel="icon" href="./img/favicon.ico" type="image/x-icon" />
+<link href="css/common.css" rel="stylesheet" type="text/css">
+<link href="css/gotop.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+h2 {
+	font-family: "Yu Gothic UI", "游ゴシック", "游ゴシック Medium", "メイリオ";
+	border-left: 12px solid #E7000A;
+	margin-bottom: 20px;
+}
+h3 {
+	font-family: "Yu Gothic UI", "游ゴシック", "游ゴシック Medium", "メイリオ";
+	font-size: 30px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+.inner , .inner1  , .inner2 , .text{
+	width: 480px;
+}
+#about {
+	margin-top: 100px;
+	margin-bottom: 100px;
+	display: block;
+	clear: both;
+	overflow: hidden;
+	width: 980px;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+#about .inner1 {
+	display: inline-block;
+	float: left;
+	padding-left: 0px;
+}
+#about .inner2 {
+	display: inline-block;
+	float: right;
+}
+#about .inner1 .patients-form {
+	margin-top: 30px;
+	text-align: center;
+}
+#about .inner2 .doctors-form {
+	margin-top: 6px;
+	text-align: center;
+}
+#message {
+	margin-top: 100px;
+	margin-right: 20px;
+	margin-left: 20px;
+	margin-bottom: 100px;
+	display: block;
+	width: 960px;
+	clear: both;
+	overflow: hidden;
+}
+#message .inner {
+	display: inline-block;
+	float: left;
+}
+#message .photo {
+	float: left;
+	margin-left: 30px;
+}
+#message .text {
+	display: block;
+	float: left;
+}
+#mission {
+	display: block;
+	margin-top: 100px;
+	margin-right: 20px;
+	margin-left: 20px;
+	margin-bottom: 100px;
+	width: 980px;
+	clear: both;
+	overflow: hidden;
+}
+#mission .text {
+	float: left;
+}
+#mission .photo {
+	float: left;
+	margin-right: 20px;
+}
+.topic1 {
+	margin: 0;
+	list-style-type: none;
+}
+.topic1 li {
+	display: inline;
+}
+.topic1 li+li:before {
+	content: " > ";
+}
+	
+@media screen and (max-width:960px){
+#about, #message, #mission{
+    width: 90%;
+    margin: 30px auto 40px;
+    padding: 0;
+}
+.inner , .inner1  , .inner2 , .text{
+	width: 100%;
+}
+#about .inner1, #about .inner2{
+	float: none;
+    margin-bottom: 30px;
+}
+#about .inner1 .patients-form, #about .inner2 .doctors-form {
+	margin-top: 15px;
+	margin-bottom: 30px;
+}
+#message .inner{
+    margin-bottom: 30px;
+    float: none;
+}
+#mission .text,
+#message .text{
+	float: none;
+}
+#message .photo{
+    width: 70%;
+    margin: 0 auto;
+    float: none;
+}
+#mission .photo{
+    width: 90%;
+    margin: 20px auto;
+    float: none;
+}
+#message .photo img,
+#mission .photo img{
+    max-width: 100%;
+    height: auto;
+}
+#mission {
+	margin-top: 100px;
+}
+}
+</style>
+<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="js/jquery.smoothscroll.js"></script>
+<script>
+	$(function(){
+		$("#nav-toggle").click(function(){
+			$(this).next().slideToggle();
+			$(this).toggleClass("active");	
+		})
+	});
+</script>
+<script>
+	$(function(){
+		$("#nav-toggle2").click(function(){
+			$(this).next().slideToggle();
+		})
+	});
+</script>
+<script>
+$(document).ready(function(){
+ 
+    $(".gotop").hide();
+ 
+    $(window).on("scroll", function() {
+ 
+        if ($(this).scrollTop() > 100) {
+         $('.gotop').slideDown("fast");
+        } else {
+            $('.gotop').slideUp("fast");
+        }
+       
+        scrollHeight = $(document).height(); 
+        scrollPosition = $(window).height() + $(window).scrollTop(); 
+        footHeight = $("footer").innerHeight();
+                 
+        if ( scrollHeight - scrollPosition  <= footHeight ) {
+            $(".gotop").css({
+                "position":"absolute",
+                "bottom": footHeight
+            });
+        } else {
+            $(".gotop").css({
+                "position":"fixed",
+                "bottom": "0px"
+            });
+        }
+    });
+ 
+    $('.gotop a').click(function () {
+        $('body,html').animate({
+        scrollTop: 0
+        }, 500);
+        return false;
+     });
+});
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+<meta name="viewport" content="wisdth=device-width, initial-scale=1">
+</head>
+
+<body id="all" onLoad="MM_preloadImages('img/doctors-forms-on.png','img/patients-forms-on.png')">
+<header>
+<div class="inner">
+<h1><a href="index.html"><img src="img/logo.png" alt="HOMEへのリンク" width="528" height="99" class="logo"/></a></h1>
+<nav id="header-nav">
+<div id="nav-toggle">
+	<span></span>			
+	<span></span>			
+	<span></span>			
+</div>
+<ul>
+<li><a href="index.html">HOME</a></li>
+<li><a  class="current" href="about.html">About</a></li>
+<li><a href="service.html">診療案内</a></li>
+<li><a href="clinic.html">提携医療機関</a></li>
+<li class="nav-study"><a href="study-dotor.html">勉強会（医療従事者向け）</a></li>
+<li><a href="contact.html">お問合せ</a></li>
+</ul>
+</nav>
+<div class="right">
+<p class="form"><a href="contact.html#contact1">お問い合わせフォームへ</a></p>
+<p class="bottom current"><a href="about.html">患者様向け</a></p>
+<p class="bottom2"><a href="about-doctor.html">医療従事者向け</a></p>
+</div>
+</div>
+</header>
+<div class="main" id="home">
+<!--ここから下を差し替える-->
+<div class="sidenav">
+	<ul class="topic1">
+		<li><a href="index.html">Home</a></li>
+		<li>about</li>
+	</ul>
+</div>
+<section id="about">
+<h2>DRs TOKYOとは</h2>
+<div class="inner1">
+<p><img src="img/about-aboutpatient.png" width="480" height="250" alt=""/></p>
+<h3>患者様へ</h3>
+<p>ドクターズ東京の臨床は、対話と医療面接を何より大切に考えております。患者さまの笑顔を取り戻し、QOLの向上を叶えるために、常に全力で診療に臨んでおります。<br>
+複数の治療パターンをカスタマイズし患者様の希望に沿った提案により、理想のオーダーメイド治療を実現いたします。</p>
+<p class="patients-form"><a href="contact.html#contact1"><img src="img/patients-forms.png" alt="患者様向けお問い合わせフォーム" width="250" height="100" id="patientsform" onMouseOver="MM_swapImage('patientsform','','img/patients-forms-on.png',1)" onMouseOut="MM_swapImgRestore()"/></a></p>
+</div>
+<div class="inner2">
+<p><img src="img/about-aboutdoctor.png" width="480" height="250" alt=""/></p>
+<h3>医療従事者様へ</h3>
+<p>これからの医療界を担う人材育成のため、私たちのチームとともに診療を考え、一緒に学びませんか？私たちは合同カンファレンス、勉強会を定期的に開催しております。<br>
+若手からベテランまで歯科医師や専門ドクターが集まって症例の検討、講義を行います。また提携、出張先クリニックも募集しております。</p>
+<p class="doctors-form"><a href="contact-doctor.html#contact2"><img src="img/doctors-forms.png" alt="医療従事者向けお問い合わせフォーム" width="250" height="100" id="doctorsform" onMouseOver="MM_swapImage('doctorsform','','img/doctors-forms-on.png',1)" onMouseOut="MM_swapImgRestore()"/></a></p>
+</div>
+</section>
+<section id="message">
+<h2>ご挨拶</h2>
+<div class="inner">
+<div class="text">
+<p>近年、患者さまからの治療に対するニーズは高まっており、日本の医療は革新的な進歩を遂げております。<br>
+患者様がより高度な治療を選択できるように、歯科の専門性も細分化して参りました。<br>
+日本の歯科医療が、世界に通用するクオリティを維持するためにも、我々は自分たちの臨床を振り返り、患者様のためになる新たな先進医療を学び続けていかなくてはなりません。<br>
+これからは患者さまの夢とQOL（Quality of Life）を先進医療で叶えるという時代です。<br>
+そこで我々はスペシャリストであるドクター同志の団体を作り、私たちが出会う患者様たち、そして日本の医療の質の向上のために
+常に高みを目指して、学び続けて参りたいと考えております。</p>
+</div>
+</div>
+<p class="photo"><img src="img/aboout-greeting.png" width="350" height="460" alt=""/></p>
+</section>
+<section id="mission">
+<h2>理念</h2>
+<p class="photo"><img src="img/about-missionimage.png" width="480" height="250" alt=""/></p>
+<div class="text">
+<p>ドクターズ東京の臨床は、対話と医療面接を何より大切に考えております。<br>
+患者さまの笑顔を取り戻し、QOLの向上を叶えるために常に全力で診療に臨んでおります。<br>
+患者さま、医院、ドクターの輪を繋ぎ、すべての参加者にとって、
+より良い医療を提案して参ります。<br>
+診療は問診を大切に、何より、診断と治療計画の立案、患者様の
+今後の人生まで考慮した一口腔単位、全身に寄与した上での治療計画を提案いたします。また、治療計画は患者様の望みを反映し叶えるものでなくてはなりません。<br>
+複数の治療パターンをカスタマイズし患者様の希望に沿った提案により、理想のオーダーメイド治療を実現いたします。<br>
+矯正、審美補綴、美容外科、インプラント、など、それぞれの分野の専門家がチームを構成し、患者さまおひとり一人の症例に向かいます。<br>
+</p>
+</div>
+</section>
+<!--ここから下を差し替える-->
+</div>
+
+<div id="sub"><p class="gotop"><a href="#all">ページトップへ</a></p></div>
+<footer>
+<div class="inner">
+<p class="form"><a href="contact.html#contact1">お問い合わせフォームへ</a></p>
+<div class="text">
+<p>&rtrif;<a href="index.html">HOME</a></p>
+<p>&rtrif;<a href="about.html">DRs TOKYOのご紹介</a></p>
+<p>&rtrif;<a href="clinic.html">提携医療機関のご紹介</a></p>
+<p>&rtrif;<a href="contact.html">お問い合わせフォーム</a></p>
+<p>&rtrif;言語選択<br> 　<a href="#">japan</a> 　<a href="#">english</a></p>
+<p>&rtrif;<a href="privacy.html">個人情報保護方針</a></p>
+</div>
+<div class="text2">
+<p id="nav-toggle2">&rtrif;診療案内</p>
+<div class="service-list">
+<ul>
+<li><a href="service.html#implant">インプラント部門 </a></li>
+<li><a href="#">審美歯科部門</a></li>
+<li><a href="#">歯周病部門</a></li>
+<li><a href="#">根管治療部門</a></li>
+<li><a href="#">矯正歯科部門</a></li>
+<li><a href="#">小児歯科部門</a></li>
+</ul>
+<ul>
+<li><a href="#">嚙み合わせ部門　</a></li>
+<li><a href="#">口腔内科部門</a></li>
+<li><a href="#">口腔外科部門</a></li>
+<li><a href="#">入れ歯部門</a></li>
+<li><a href="service.html#lazer">レーザー部門</a></li>
+</ul>
+</div>
+</div>
+<div class="text">
+<p>&rtrif;<a href="study-doctor.html#study2">ブログ</a></p>
+<p>&rtrif;<a href="study-doctor.html#study3">Instagram</a></p>
+<p>&rtrif;<a href="#">医療従事者向け情報</a></p>
+<ul>
+<li><a href="study-doctor.html#study3">勉強会</a></li>
+</ul>
+</div>
+<p class="copyright">Copyright &copy; 2018 ドクターズ東京</p>
+</div>
+</footer>
+</body>
+</html>

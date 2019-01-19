@@ -1,0 +1,485 @@
+<!doctype html>
+<html>
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-116392919-2"></script>
+<script type="text/javascript" src="./js/ga.js"></script>
+<meta charset="utf-8">
+<title>お問合せ |インプラント、審美歯科の名医・専門家ドクターチーム【ドクターズ東京】</title>
+<meta name="description" content="ドクターズ東京は世界一受けたい医療を共に目指す名医・専門家ドクターチームです。インプラント、審美歯科に関する無料相談、医療関係者向け勉強会を行っております。提携出張先クリニックも募集しております。詳細はお問い合わせフォームよりご連絡下さい。">
+<link rel="icon" href="./img/favicon.ico" type="image/x-icon"/>
+<link href="css/common.css" rel="stylesheet" type="text/css">
+<link href="css/gotop.css" rel="stylesheet" type="text/css">
+
+<style type="text/css">
+.main {
+	width: 960px;
+}
+.box {
+	overflow: hidden;
+	width: 880px;
+	margin-top: 100px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 300px;
+}
+.box p{
+    float:left;
+    margin: 20px;
+}
+h2,h3{
+	margin-bottom: 30px;
+	text-align: center;
+}
+section .text {
+	margin-bottom: 30px;
+    font-size: 20px;
+	text-align: center;
+}
+table {
+	margin-left: auto;
+	margin-right: auto;
+    background-color: #d8d8eb;
+	border-collapse: collapse;
+    width: 840px;
+}
+table #select{
+    background-color: #efefef;
+}
+table td,
+table th{
+	border: 1px solid #131353;
+	padding: 10px;
+	text-align: left;
+    font-weight: 100;
+}
+table th, table td{
+    width: 50%;
+}
+.push {
+	text-align: center;
+    margin: 30px auto;
+}
+.push input{
+    padding: 10px 20px;
+}
+section#contact1 {
+	margin-bottom: 300px;
+}
+.topic1 {
+	margin: 0;
+	list-style-type: none;
+}
+.topic1 li {
+	display: inline;
+}
+.topic1 li+li:before {
+	content: " > ";
+}
+#contact #contact-announcement {
+	padding-left: 24px;
+	border-left: 12px solid rgba(231,0,10,1.00);
+	text-align: left;
+	font-size: 40px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-family: "游ゴシック", "游ゴシック Medium", "メイリオ";
+	margin-top: 30px;
+	margin-left: 20px;
+}
+#contact .box2 {
+	margin-top: 100px;
+	margin-bottom: 0px;
+	width: 960px;
+}
+#contact .box2 h2 {
+	text-align: left;
+	border-left: 12px solid #E7000A;
+	padding-left: 24px;
+}
+
+@media screen and (max-width:960px){
+.main {
+	width: 100%;
+}
+.box {
+    width: 100%;
+    height: 100%;
+}
+.box p{
+    float:left;
+    width:40%;
+    margin: 0 5% 100px;
+}
+.box p img{
+    max-width: 100%;
+    height: auto;
+}
+section h2{
+    font-size: 24px;
+    text-align: left;
+}
+section .text {
+	margin-bottom: 30px;
+    font-size: 18px;
+	text-align: left;
+}
+table{
+    width: 90%;
+	border-bottom: 1px solid #131353;
+    margin-bottom: 20px;
+}
+table th, table td{
+    display: block;
+    width: 100%;
+    padding: 10px 5px;
+    background-color: #d8d8eb;
+    border-bottom: none;
+}
+table td{
+    background-color: #ededf4;
+    }
+textarea, #name1, #tel1, #address1,
+#name2, #tel2, #address2,#field{
+    width:90%;
+}
+.push {
+	text-align: center;
+    margin: 30px auto;
+}
+.push input{
+    padding: 20px;
+}
+#contact .box2 h2 {
+	padding-left: 10px;
+	border-left: 8px solid #E7000A;
+	margin-left: 24px;
+}
+}
+</style>
+
+<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="js/jquery.smoothscroll.js"></script>
+<script>
+	$(function(){
+		$("#nav-toggle").click(function(){
+			$(this).next().slideToggle();
+			$(this).toggleClass("active");	
+		})
+	});
+</script>
+<script>
+	$(function(){
+		$("#nav-toggle2").click(function(){
+			$(this).next().slideToggle();
+		})
+	});
+</script>
+<script>
+$(document).ready(function(){
+ 
+    $(".gotop").hide();
+ 
+    $(window).on("scroll", function() {
+ 
+        if ($(this).scrollTop() > 100) {
+         $('.gotop').slideDown("fast");
+        } else {
+            $('.gotop').slideUp("fast");
+        }
+       
+        scrollHeight = $(document).height(); 
+        scrollPosition = $(window).height() + $(window).scrollTop(); 
+        footHeight = $("footer").innerHeight();
+                 
+        if ( scrollHeight - scrollPosition  <= footHeight ) {
+            $(".gotop").css({
+                "position":"absolute",
+                "bottom": footHeight
+            });
+        } else {
+            $(".gotop").css({
+                "position":"fixed",
+                "bottom": "0px"
+            });
+        }
+    });
+ 
+    $('.gotop a').click(function () {
+        $('body,html').animate({
+        scrollTop: 0
+        }, 500);
+        return false;
+     });
+});
+</script>
+<script>
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+<script type="text/javascript" src="js/jquery.smoothscroll.js"></script>
+<meta name="viewport" content="wisdth=device-width, initial-scale=1">
+</head>
+
+<body id="all" onLoad="MM_preloadImages('img/patients-form.png','img/doctors-form_on.png')">
+<header>
+<div class="inner">
+<h1><a href="index.html"><img src="img/logo.png" alt="HOMEへのリンク" width="528" height="99" class="logo"/></a></h1>
+<nav id="header-nav">
+<div id="nav-toggle">
+	<span></span>			
+	<span></span>			
+	<span></span>			
+</div>
+<ul>
+<li><a href="index.html">HOME</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="service.html">診療案内</a></li>
+<li><a href="clinic.html">提携医療機関</a></li>
+<li class="nav-study"><a href="study-dotor.html">勉強会（医療従事者向け）</a></li>
+<li><a  class="current" href="contact.html">お問合せ</a></li>
+</ul>
+</nav>
+<div class="right">
+<p class="form"><a href="contact.html#contact1">お問い合わせフォームへ</a></p>
+<p class="bottom current"><a href="contact.html">患者様向け</a></p>
+<p class="bottom2"><a href="contact-doctor.html">医療従事者向け</a></p>
+</div>
+</div>
+</header>
+
+<div class="main" id="contact">
+<!--ここから下を差し替える-->
+
+   <div class="sidenav">
+	<ul class="topic1">
+		<li><a href="index.html">Home</a></li>
+		<li>お問合せ</li>
+	</ul>
+	</div>
+	<section class="box2"><h2>お問合せ</h2></section>
+    <div class="box">
+    <p><a href="#contact1"><img src="img/patients-form_on.png" alt="" width="400" height="200" id="btn01" onMouseOver="MM_swapImage('btn01','','img/patients-form.png',1)" onMouseOut="MM_swapImgRestore()"/></a></p>
+    <p><a href="#contact2"><img src="img/doctors-form.png" alt="" width="400" height="200" id="btn02" onMouseOver="MM_swapImage('btn02','','img/doctors-form_on.png',1)" onMouseOut="MM_swapImgRestore()"/></a></p>
+    </div>	
+    
+	<section id="contact1">
+	<h2>お問合せフォーム（患者様向け）</h2>
+	<p class="text">ドクターズ東京に関するお問合せ・ご質問等がございましたら、<br>下記のフォームよりお問合せください。</p>
+	<p class="text">※相談は無料です。お気軽にお問合せください。</p>	
+	<table>
+    <tbody>
+        <tr>
+            <th>お名前</th>
+            <td><input name="name1" type="text" id="name1" size="50"></td>
+        </tr>
+        <tr>
+            <th>性別</th>
+            <td>
+                <label><input type="radio" name="gender1" value="1"> 男</label>
+                <label><input type="radio" name="gender1" value="2"> 女</label>
+            </td>
+        </tr>
+        <tr>
+            <th>年齢</th>
+            <td><input name="aga1" type="text" id="age1" size="6"> 歳</td>
+        </tr>
+        <tr>
+            <th>お住まい</th>
+            <td><select name="select1" id="select1">
+                <option>ここから選択します↓</option>
+                <option value="1">東京</option>
+                <option value="2">神奈川</option>
+                <option value="3">埼玉</option>
+                <option value="4">千葉</option>
+                <option value="4">栃木</option>
+                <option value="4">群馬</option>
+                <option value="4">茨木</option>
+                <option value="4">北海道・東北地方</option>
+                <option value="4">北陸地方</option>
+                <option value="4">中部地方</option>
+                <option value="4">近畿地方</option>
+                <option value="4">中国地方</option>
+                <option value="4">四国地方</option>
+                <option value="4">九州地方・沖縄</option>
+            </select></td>
+        </tr>
+        <tr>
+            <th>ドクターズ東京からの連絡方法</th>
+            <td>
+                <label><input type="radio" name="radio1-1" value="1"> お電話</label>
+                <label><input type="radio" name="radio1-1" value="2"> メール</label>
+            </td>
+        </tr>
+        <tr>
+            <th>電話番号（上記で選択したものを記入）</th>
+            <td><input name="tel1" type="tel" id="tel1" size="50"></td>
+        </tr>
+        <tr>
+            <th>メールアドレス（上記で選択したものを記入）</th>
+            <td><input name="address1" type="text" id="address1" size="50">
+            </td>
+        </tr>
+        <tr>
+            <th>お問合せ内容</th>
+            <td>
+                <label><input type="radio" name="radio1-2" value="1"> 診療希望</label>
+                <label><input type="radio" name="radio1-2" value="2"> その他</label>
+            </td>
+        </tr>
+        <tr>
+            <th>コメント</th>
+            <td><textarea name="textarea1" cols="50" rows="8" id="textarea1"></textarea></td>
+        </tr>
+    </tbody>
+	</table>
+    <p class="push"><input type="submit" name="submit2" value="個人情報保護方針に同意して送信"></p>
+	</section>
+
+    
+    <section id="contact2">
+	<h2>お問合せフォーム（医療関係者向け）</h2>
+	<p class="text">ドクターズ東京に関するお問合せ・ご質問等がございましたら、<br>下記のフォームよりお問合せください。</p>
+		<table>
+			<tbody>
+				<tr>
+					<th>お名前</th>
+					<td><input name="name2" type="text" id="name2" size="50"></td>
+				</tr>
+				<tr>
+					<th>性別</th>
+					<td>
+                        <label><input type="radio" name="gender2" value="1"> 男</label>
+                        <label><input type="radio" name="gender2" value="2"> 女</label>
+                    </td> 
+				</tr>
+				<tr>
+					<th>年齢</th>
+					<td><input name="aga2" type="text" id="age2" size="6"> 歳</td>
+				</tr>
+				<tr>
+					<th>お住まい</th>
+					<td><select name="select2" id="select2">
+						<option>ここから選択します↓</option>
+						<option value="1">東京</option>
+						<option value="2">神奈川</option>
+						<option value="3">埼玉</option>
+						<option value="4">千葉</option>
+						<option value="4">栃木</option>
+						<option value="4">群馬</option>
+						<option value="4">茨木</option>
+						<option value="4">北海道・東北地方</option>
+						<option value="4">北陸地方</option>
+						<option value="4">中部地方</option>
+						<option value="4">近畿地方</option>
+						<option value="4">中国地方</option>
+						<option value="4">四国地方</option>
+						<option value="4">九州地方・沖縄</option>
+					</select></td>
+				</tr>
+				<tr>
+					<th>専門医療分野</th>
+					<td><input name="field" type="text" id="field" size="50"></td>
+				</tr>
+				<tr>
+					<th>ドクターズ東京からの連絡方法</th>
+					<td>
+                        <label><input type="radio" name="radio2-1" value="1"> お電話</label>
+                        <label><input type="radio" name="radio2-1" value="2"> メール</label>
+                    </td>
+				</tr>
+				<tr>
+					<th>電話番号（上記で選択したものを記入）</th>
+					<td><input name="tel2" type="tel" id="tel2" size="50"></td>
+				</tr>
+				<tr>
+					<th>メールアドレス（上記で選択したものを記入）</th>
+					<td><input name="address2" type="text" id="address2" size="50">
+					</td>
+				</tr>
+				<tr>
+					<th>お問合せ内容</th>
+					<td>
+                        <label><input type="radio" name="radio2-2" value="1"> 勉強会の参加</label>
+                        <label><input type="radio" name="radio2-2" value="2"> 提携医療機関に関して</label>
+                        <label><input type="radio" name="radio2-2" value="3"> その他</label>
+                    </td>
+				</tr>
+				<tr>
+					<th>コメント</th>
+					<td><textarea name="textarea2" cols="50" rows="8" id="textarea2"></textarea></td>
+				</tr>
+			</tbody>
+		</table>
+    		<p class="push">
+			<input type="submit" name="submit2" value="個人情報保護方針に同意して送信">
+		</p>
+</section>
+</div>
+
+<div id="sub"><p class="gotop"><a href="#all">ページトップへ</a></p></div>
+
+<footer>
+<div class="inner">
+<p class="form"><a href="contact.html#contact1">お問い合わせフォームへ</a></p>
+<div class="text">
+<p>&rtrif;<a href="index.html">HOME</a></p>
+<p>&rtrif;<a href="about.html">DRs TOKYOのご紹介</a></p>
+<p>&rtrif;<a href="clinic.html">提携医療機関のご紹介</a></p>
+<p>&rtrif;<a href="contact.html">お問い合わせフォーム</a></p>
+<p>&rtrif;言語選択<br> 　<a href="#">japan</a> 　<a href="#">english</a></p>
+<p>&rtrif;<a href="privacy.html">個人情報保護方針</a></p>
+</div>
+<div class="text2">
+<p id="nav-toggle2">&rtrif;診療案内</p>
+<div class="service-list">
+<ul>
+<li><a href="service.html#implant">インプラント部門 </a></li>
+<li><a href="#">審美歯科部門</a></li>
+<li><a href="#">歯周病部門</a></li>
+<li><a href="#">根管治療部門</a></li>
+<li><a href="#">矯正歯科部門</a></li>
+<li><a href="#">小児歯科部門</a></li>
+</ul>
+<ul>
+<li><a href="#">嚙み合わせ部門　</a></li>
+<li><a href="#">口腔内科部門</a></li>
+<li><a href="#">口腔外科部門</a></li>
+<li><a href="#">入れ歯部門</a></li>
+<li><a href="service.html#laser">レーザー部門</a></li>
+</ul>
+</div>
+</div>
+<div class="text">
+<p>&rtrif;<a href="study-doctor.html#study2">ブログ</a></p>
+<p>&rtrif;<a href="study-doctor.html#study3">Instagram</a></p>
+<p>&rtrif;医療従事者向け情報</p>
+<ul>
+<li><a href="study-doctor.html#study3">勉強会</a></li>
+</ul>
+</div>
+<p class="copyright">Copyright &copy; 2018 ドクターズ東京</p>
+</div>
+</footer>
+</body>
+</html>
