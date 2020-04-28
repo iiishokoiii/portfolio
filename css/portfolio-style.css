@@ -196,12 +196,18 @@ body {
   margin-left: 260px;
 }
 .c-section {
-  padding: 20px;
+  /* padding: 20px; */
+  margin-bottom: 30px;
 }
 .c-ttl-lv2 {
-  margin: 10px 0;
+  margin-bottom: 30px;
   font-size: 0.24rem;
+  font-weight: normal;
   line-height: 1.4em;
+  margin: 0 0 20px;
+  padding: 10px 20px;
+  border-left: 5px solid #d8cfc7;
+  background: rgba(243, 242, 238, 1);
 }
 .c-item-ttl {
   padding-bottom: 5px;
@@ -218,18 +224,18 @@ body {
   margin-left: 20px;
 }
 .c-item__content {
-  padding: 5px 0;
-  margin-bottom: 20px;
+  /* padding: 5px 0; */
+  margin-bottom: 30px;
   position: relative;
 }
 .c-item__txtarea {
   float: left;
-  margin: 5px 10px;
-  width: calc(70% - 40px);
+  margin: 0 0 0 20px;
+  width: calc(70% - 20px);
 }
 .c-item__img {
   float: left;
-  margin: 5px 10px;
+  /* margin: 5px 10px; */
   max-width: 240px;
   width: 30%;
   background-color: #ccc;
@@ -264,6 +270,13 @@ body {
 }
 .c-item__img a:hover .img-hover {
   display: block;
+}
+.c-item__chip {
+  padding: 0.01rem 15px;
+  margin-right: 10px;
+  font-size: 0.11rem;
+  background-color: #eee;
+  display: inline-block;
 }
 .c-item__tag {
   padding: 2px 20px;
@@ -377,11 +390,25 @@ body {
     width: 100%;
     padding: 20px 0;
   }
+  .c-item__content {
+    margin-bottom: 30px;
+  }
   .c-section {
-    width: calc(100% - 40px);
+    margin-bottom: 20px;
+    padding: 0 20px;
+  }
+  .c-ttl-lv2 {
+    margin: 0 -20px 20px;
+    margin-bottom: 20px;
+    border-left: none;
+    border-bottom: 2px solid #d8cfc7;
+  }
+  .c-lead__txt {
+    line-height: 1.8;
   }
   .c-item-ttl {
-    padding-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: none;
   }
   .c-item__img {
     width: 240px;
@@ -398,6 +425,7 @@ body {
     max-width: 100%;
     margin: 20px auto 0;
     float: none;
+    padding: 0 5px;
   }
   .c-item-ttl__date {
     float: right;
@@ -429,6 +457,30 @@ body {
 }
 .u-mt20 {
   margin-top: 20px;
+}
+.u-mb5 {
+  margin-bottom: 5px;
+}
+.u-mb10 {
+  margin-bottom: 10px;
+}
+.u-mb15 {
+  margin-bottom: 15px;
+}
+.u-mb20 {
+  margin-bottom: 20px;
+}
+.u-mr5 {
+  margin-right: 5px;
+}
+.u-mr10 {
+  margin-right: 10px;
+}
+.u-mr15 {
+  margin-right: 15px;
+}
+.u-mr20 {
+  margin-right: 20px;
 }
 .l-float-l {
   float: left;
