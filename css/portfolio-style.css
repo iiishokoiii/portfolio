@@ -316,6 +316,9 @@ body {
   text-align: right;
   margin: 20px;
 }
+.c-lead__txt {
+  line-height: 2;
+}
 .pagetop {
   position: fixed;
   bottom: 10px;
