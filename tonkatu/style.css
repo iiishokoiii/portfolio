@@ -1,0 +1,728 @@
+@charset "utf-8";
+/*common*/
+body{
+	font-family:　"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", "sans-serif";
+	line-height: 1.4;
+}
+p, body, h1, h2, h3, h4, h5, ul {
+	margin: 0; 
+	padding: 0;
+}
+img{
+	vertical-align: bottom;
+	border: none;
+}
+.clearfix:after{
+	clear: both;
+	display: block;
+	content: '';
+}
+header, h2, h3 {
+    font-family: "游明朝体", "Yu Mincho", YuMincho, 'Hiragino Mincho ProN', serif;
+    font-family: 
+}
+
+/*common(header)*/
+header{
+	background-color: #9596b2;
+	padding: 2vh 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(img/bg-img-main.jpg);
+    background-repeat: no-repeat;
+    background-position: center -300px;
+}
+header .inner{
+    width: calc(96vw - 4px);
+    margin: 0 auto;
+    border: 2px solid #fff;
+    position: relative;
+}
+header #toggle1{
+	float: right;
+	margin: 10px;
+	font-size: 2em;
+	line-height: 60px;
+	border-left: 1px solid #fff;
+	border-right: 1px solid #fff;
+	padding: 0 20px;
+	color: #fff;
+    cursor: pointer;
+}
+header .icon{
+	margin: 0 10px;
+	float: right;
+}
+header .icon p, footer .icon p{
+	float: left;
+	margin: 10px 0;
+	font-size: 2em;
+	line-height: 60px;
+	color: #fff;
+	padding: 0 10px;
+}
+.nav{
+    width: 210px;
+    min-height: cal(100vh -8px);
+    display: none;
+    top: 80px;
+    right: 5px;
+    position: absolute;
+	background-color: rgba(255,255,255,0.94);
+    padding: 60px 10px;
+    border: 1px solid #bbb;
+    z-index: 100;
+}
+.nav ul{
+    width: 80%;
+    margin: 0 auto;
+    list-style: none;
+    border-top: 1px solid #555;
+    border-bottom: 1px solid #555;
+    text-align: center;
+    padding: 10px;
+}
+.nav li{
+	padding: 5px 0;
+}
+.nav .index{
+    padding: 5px 0 20px;
+}
+.nav a{
+	color: #333;
+	text-decoration: none;
+	transition-duration: 0.4s;
+}
+.nav a.current{
+    color: #c6a26a;
+}
+.nav a:hover{
+	color: #ed5144;
+}
+header .scroll{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+	font-size: 1.2em;
+	padding: 0 10px;
+}
+header .scroll a{
+	color: #fff;
+}
+header .scroll p{
+    float: left;
+    margin-right: 10px;
+    line-height: 3em;
+}
+header .scroll .fas{
+    font-size: 3em;
+}
+/***toppage mainimage***/
+#index header{
+    height: 94vh;
+}
+#index header .inner{
+    height: 100%;
+    position: relative;
+}
+header .main-box{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 25vh;
+    z-index: 99;
+    width: 50%;
+    max-width: 300px;
+    margin:  auto;
+    text-align: center;
+    background-color: #fff;
+    padding: 30px 30px;
+}
+.main-box h1{
+    padding-bottom: 15px;
+    width: 50%;
+    padding-left: 25%;
+}
+.main-box h1 img{
+    max-width: 100%;
+    height: auto;
+}
+.main-box .text{
+    padding-top: 20px;
+    border-top: 1px solid #ccc;
+}
+/***css-animation(slide)***/
+.main-box h1{
+	animation: slidein-main 1s ease-in-out 1;
+	animation-delay: 0.4s;
+}
+@keyframes slidein-main {
+    0% {
+        margin-left: +60px;
+    }
+    60% {
+        margin-left: -20px;
+    }
+    100% {
+        margin-left: 0;
+    }
+}
+.pagetop{
+    position:fixed;
+    bottom: 20px;
+    right: 40px;
+	font-size: 3em;
+	text-shadow: 0 2px #aaa;
+}
+.pagetop a{
+	color: #666666;
+	transition-duration: 0.2s;
+}
+.pagetop a:hover{
+	color: #c6a26a;
+}
+/*common(footer)*/
+footer .inner{
+	width: 960px;
+	margin: 0 auto;
+}
+footer{
+	clear: both;
+	overflow: hidden;
+	background-color: #eeeae7;
+}
+footer p.copyright{
+	text-align: center;
+	margin: 20px 0;
+	clear: both;
+}
+footer .icon{
+	margin: 10px 10px 40px;
+	float: right;
+}
+.scroll-link{
+    font-size: 3em;
+    text-align: center;
+    clear: both;
+    margin-bottom: 20px;
+}
+.scroll-link a{
+    display: inline-block;
+    width: 100%;
+    color: #eee;
+    transition-duration: 0.4s;
+}
+.scroll-link a:hover{
+    color: #ccc;
+}
+/*toppage news*/
+#news{
+    margin-bottom: 60px;
+}
+#news .inner{
+    width: 960px;
+    margin: 10px auto;
+    border-top: solid 1px #a7a7a7;
+    border-bottom: solid 1px #a7a7a7;
+    padding: 20px 0;
+}
+#news h3{
+    text-align: center;
+}
+#news span{
+    margin: 0 10px;
+    padding: 4px 10px;
+}
+#news .title{
+    border: solid 1px #a7a7a7;
+    padding: 1px 8px;
+    border-radius: 2px;
+    background-color: #f8f8f8;
+    font-family: "游明朝体", "Yu Mincho", YuMincho, 'Hiragino Mincho ProN', serif;
+}
+#news .date{
+    font-family: "游明朝体", "Yu Mincho", YuMincho, 'Hiragino Mincho ProN', serif;;
+}
+#news .text{
+    border-left: solid 1px #a7a7a7;
+}
+/*toppage index*/
+#index main{
+	padding: 60px 0 60px;
+}
+#index section{
+	margin-bottom: 20px;
+    width: calc(50vw + 475px);
+}
+#index section:nth-of-type(odd){
+    float: left;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+#index section:nth-of-type(even){
+    float: right;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+#index #section1{
+    background-image: url(img/bg-img01.png);
+}
+#index #section1{
+    background-image: url(img/bg-img01.png);
+}
+#index #section2{
+    background-image: url(img/bg-img02.png);
+}
+#index #section3{
+    background-image: url(img/bg-img03.png);
+}
+#index #section4{
+    background-image: url(img/bg-img04.png);
+}
+#index #section5{
+    background-image: url(img/bg-img05.png);
+}
+#index #section6{
+    background-image: url(img/bg-img06.png);
+}
+#index section .inner{
+    background-color: #e7e1c8;
+    width: calc(25vw + 475px - 20px);
+}
+#index section:nth-of-type(odd) .inner{
+    float: right;
+    border-left: 6px solid #cfbd6b;
+    padding-left: 14px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+#index section:nth-of-type(even) .inner{
+    float: left;
+    border-right: 6px solid #c6a26a;
+    padding-right: 14px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+#index section .title{
+    background-color: #fefefe;
+    opacity: 0.8;
+    margin: 70px 0 20px;
+    width: 25vw;
+}
+#index section:nth-of-type(odd) .title{
+    float: left;
+}
+#index section:nth-of-type(even) .title{
+    float: right;
+}
+#index section h3{
+    padding: 10px;
+}
+#index section:nth-of-type(odd) h3{
+    float: right;
+}
+#index section:nth-of-type(even) h3{
+    float: left;
+}
+#index section .box{
+	margin: 20px 10px;
+}
+#index section:nth-of-type(odd) .box{
+	float: left;
+}
+#index section:nth-of-type(even) .box{
+	float: right;
+}
+.imglink{
+	width: 140px;
+    background-color: #333;
+	position: relative;
+    border-radius: 50%;
+}
+#index h4{
+    font-size: 0.9em;
+    font-weight: normal;
+	text-align: center;
+    color: #333;
+	width: 140px;
+    margin: 10px 0;
+}
+.imglink img.thum{
+	width: 140px;
+	height: 140px;
+	object-fit: cover;
+    border-radius: 50%;
+}
+.imglink a img.thum{
+	transition-duration: 0.6s;
+    transition-timing-function: ease-in;
+}
+.imglink a:hover img.thum{
+	opacity: 0.6;
+}
+.imglink a img.viewmore{
+	position: absolute;
+	top: 40px;
+	left: 40px;
+	width: 60px;
+	display: none;
+}
+.imglink a:hover img.viewmore{
+	display: block;
+}
+/*subpage*/
+/***subpage header***/
+.subpage header .title{
+    margin: 10px;
+    float: left;
+    text-align: center;
+    background-color: #fff;
+    padding: 10px 0;
+}
+.subpage header .title h1{
+    width: 100px;
+    padding: 0 30px;
+    float: left;
+    border-right: 1px solid #888;
+}
+.subpage header .title h1 img{
+    max-width: 100%;
+    height: auto;
+}
+.subpage header .title h2{
+    float: left;
+    padding: 0 75px;
+    line-height: 50px;
+}
+.main-box .text{
+    padding-top: 20px;
+    border-top: 1px solid #ccc;
+}
+.subpage main{
+    width: 960px;
+    max-width: 96%;
+    padding: 20px 0 60px;
+    margin: 0 auto;
+}
+.subpage h4, .subpage h5, .subpage .chart{
+    font-family: "游明朝体", "Yu Mincho", YuMincho, 'Hiragino Mincho ProN', serif;
+}
+.subpage  .maintitle{
+    width: 100%;
+    background-color: #e7e1c8;
+    margin: 20px auto;
+}
+.subpage #page01 .maintitle{
+    background-image: url(img/bg-img01.png);
+}
+.subpage #page02 .maintitle{
+    background-image: url(img/bg-img02.png);
+}
+.subpage #page03 .maintitle{
+    background-image: url(img/bg-img03.png);
+}
+.subpage #page04 .maintitle{
+    background-image: url(img/bg-img04.png);
+}
+.subpage #page05 .maintitle{
+    background-image: url(img/bg-img05.png);
+}
+.subpage .maintitle h3{
+    width: 90%;
+    float: right;
+    text-align: left;
+    padding: 12px;
+    background-color: #e7e1c8;
+    border-right: 6px solid #cfbd6b;
+    border-left: 6px solid #cfbd6b;
+}
+.subpage .photo{
+    float: left;
+    width: 50%;
+    margin-bottom: 40px;
+}
+.subpage .point,
+.subpage .chart,
+.subpage .map{
+    float: left;
+    width: calc(50% - 40px);
+    padding: 0 20px 10px;
+    margin-bottom: 40px;
+    background-color: #fff;
+}
+.subpage .photo img{
+    max-width: 100%;
+    height: auto;
+}
+.subpage .map iframe{
+    max-width: 100%;
+}
+.subpage .point .inner,
+.subpage .chart .inner{
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+    padding: 15px 0;
+}
+.subpage h4{
+    text-align: center;
+    font-size: 1.2em;
+    padding: 20px 0;
+}
+.subpage .point h5{
+    color: #f37257;
+    font-size: 1.1em;
+    padding: 8px 0;
+}
+.subpage .point p{
+    font-size: 1em;
+}
+.subpage .chart .chart-template{
+    text-align: center;
+    clear: both;
+    font-size: 0.8em;
+    margin: auto;
+    width: 440px;
+    overflow: hidden;
+}
+.chart-template .title,
+.chart-template .icon,
+.chart-template .line,
+.chart-template .dot,
+.chart-template .item{
+    display: inline-block;
+    background-color: #eee;
+}
+.chart-template p{
+    float: left;
+    margin: 10px 0;
+}
+.chart-template .title{
+    width: 70px;
+    padding: 5px 0;
+    background-color: #fff;
+    color: #f26c4f;
+}
+.chart-template .icon{
+    width: 10px;
+    padding: 5px 0;
+    background-color: #fff;
+}
+.chart-template .item{
+    width: 60px;
+    padding: 5px;
+    background-color: #fff;
+}
+.chart-template .mark{
+    background-color: #f26c4f;
+}
+.chart-template .line{
+    width: 24px;
+    height: 6px; 
+    border: 2px solid #fff;
+}
+.chart-template .dot{
+    width: 12px;
+    height: 12px;
+    margin: 0;
+    border-radius: 50%;
+}
+.map{
+    text-align: center;
+}
+.map .link{
+    float: none;
+    padding: 10px 0;
+}
+.map .link a{
+    color: #333;
+}
+.map .link a:hover{
+    color: #f26c4f;
+}
+/*#####responsive(max-width:960px)####*/
+@media screen and (max-width:960px){
+/*common*/
+footer .inner{
+	width: 100%;
+}
+.nav{
+	width: 80vw;
+    margin: 10px auto;
+	left: 0;
+}
+.nav li{
+    padding: 20px;
+}
+/*toppage news*/
+#news .inner{
+	width: 90%; 
+    padding: 20px 0;
+}
+/*toppage index*/
+#index section:nth-of-type(n){
+    width: calc(50vw + 45% - 5px);
+}
+#index section:nth-of-type(n) .inner{
+    width: calc(70% - 20px);
+} 
+#index section:nth-of-type(n) .title{
+    width: 30%;
+} 
+/*subpage*/ 
+.subpage header .title h1, 
+.subpage header .title h2{
+    float: none;
+    margin-top: 10px;
+}
+.subpage header .title h1{
+    border: none;
+}
+.subpage header .title h2{
+    padding: 0 40px;
+}
+.subpage main{
+	width: 100%;
+    padding: 40px 0 0;
+}
+.subpage .maintitle{
+    width: 98%;
+    margin: 0 auto 40px;
+}
+.subpage .point, .subpage .chart, .subpage .map{
+    width: calc(100% - 40px);
+    float: none;
+    clear: both;
+}
+
+.subpage .photo{
+    width: 480px;
+    margin: 0 auto 60px;
+    float: none;
+}
+.subpage .point h5, 
+.subpage .point p{
+    width: 80%;
+    margin: 0 auto;
+}
+}
+
+/*#####responsive(max-width:640px)####*/
+@media screen and (max-width:640px){
+    
+/*common*/
+.pagetop{
+    position:fixed;
+    bottom: 20px;
+    right: 20px;
+}
+/***toppage mainimage***/
+    header .inner{
+        width: 94%;
+    }
+    header .main-box{
+        top: 20vh;
+        width: 80%;
+        padding: 20px;
+    }
+    header .main-box{
+        width: 80%;
+        padding: 20px;
+    }
+	
+/***css-animation(slide)***/
+.main-box h1{
+	animation: slidein-main 1s ease-out 1;
+}
+/*toppage news*/
+#news{
+    margin-bottom: 40px;
+}
+#news .inner{
+    width: 90%;
+}
+#news h3{
+    text-align: center;
+}
+#news span{
+    display: inline-block;
+    float: left;
+    margin: 5px;
+}
+#news .text{
+    padding-left: 20px;
+    width: 70%; 
+    border: none;
+}
+/*toppage index*/
+#index section:nth-of-type(n){
+    width: 100%;
+    float: none;
+    border-radius: 0px;
+    padding-top: 10px;
+}
+#index section:nth-of-type(n) .inner{
+    width: 100%;
+    float: none;
+    border-radius: 0px;
+    padding: 0px;
+    border-top: 6px solid #cfbd6b;
+    border-left: none;
+    border-right: none;
+}
+#index section:nth-of-type(n) .title{
+    margin: 40px 0 20px;
+    width: 100%;
+    float: none;
+}
+#index section:nth-of-type(n) .box{
+	margin: 20px 10px;
+	float: left;
+}
+#index section .box:nth-of-type(odd){
+    margin-left: calc(50vw - 160px);
+    }
+#index section h3{
+    padding: 10px 30px;
+}
+/*subpage*/
+.subpage .point, .subpage .chart, .subpage .map{
+    padding: 0; 
+    width: 100%;;
+    float: none;
+    clear: both;
+}
+.subpage .point .inner,
+.subpage .chart .inner{
+    border-bottom: none;
+    padding: 15px 0;
+}
+.subpage .point{
+}
+.subpage .chart .chart-template{
+    width: 100%;
+    font-size: 0.8em;
+}
+.chart-template p{
+    margin: 5px auto;
+    float: none;
+}
+.chart-template .icon{
+    display: none;
+    margin: 0;
+}
+.chart-template .line{
+    width: 10px;
+}
+.chart-template .item{
+    padding: 0;
+}
+.subpage .maintitle h3{
+    width: 70%;
+}
+.subpage .photo{
+    max-width: 80%;
+}
+.subpage .link a:before{
+    content: "\A";
+}
+}

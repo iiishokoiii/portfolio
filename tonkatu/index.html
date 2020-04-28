@@ -1,0 +1,309 @@
+<!doctype html>
+<html>
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-116392919-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-116392919-1');
+</script>
+<meta charset="utf-8">
+<title>TOP |とんかつサイト</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--favicon-->
+<link rel="shortcut icon" type="image/vnd.microsoft.icon" href="img/favicon.ico">
+<!--script-->
+<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="js/jquery.smoothscroll.js"></script>
+<script>
+    <!--toggle-menu-->
+	$(function(){
+		$("#toggle1").click(function(){
+			$(this).next().slideToggle();
+			$(this).toggleClass("active");	
+		})
+	});
+    <!--scroll-btn-->
+    $(function() {
+        var topBtn = $('.pagetop');    
+        topBtn.hide();
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 100) {
+                topBtn.fadeIn();
+            } else {
+                topBtn.fadeOut();
+            }
+        });
+    });
+</script>
+<!--css-->
+<link href="style.css" rel="stylesheet" type="text/css">
+<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+</head>
+
+<body id="index">
+<header class="clearfix">
+	<div class="inner clearfix">
+        <div class="icon">
+        <p><i class="fab fa-twitter-square"></i></p>
+        <p><i class="fab fa-facebook-square"></i></p>
+        </div>	
+        <p id="toggle1">Menu</p>
+        <div class="nav">
+            <ul>
+            <li class="index"><a class="current" href="#all">Indexページ</a></li>
+            <li><a href="page01-kamata.html">蒲田・大森・池上</a></li>
+            <li><a href="page02-takadanobaba.html">高田馬場・新宿</a></li>
+            <li><a href="page03-ueno.html">上野・秋葉原</a></li>
+            <li><a href="page04-others.html">その他 東京都内</a></li>
+            <li><a href="page05-kawasaki.html">川崎・武蔵小杉</a></li>
+            </ul>
+        </div>
+
+        <div class="main-box clearfix">
+            <h1><img src="img/img-logo.png"　alt="とんかつサイト"/></h1>
+            <p class="text">
+            とんかつ好きによる<br>とんかつ好きのための<br>とんかつサイト。</p>
+        </div>
+        <div class="scroll">
+        <a href="#all">
+        <p><i class="fas fa-angle-down"></i></p><p>scroll</p></a>
+        </div>
+    </div>
+</header>
+	
+<main id="all" class="clearfix">
+
+<div class="clearfix" id="news">
+<h3>新着情報</h3>
+<div class="inner clearfix">
+<p>
+<span class="title">お知らせ</span>
+<span class="date">2018.03.19</span>
+<span class="text"> サイトオープンしました。</span><br><br><br>
+</p>
+</div>
+</div>
+    
+    
+<section class="clearfix" id="section1">
+<div class="title clearfix">
+<h3>蒲田・大森・池上</h3>
+</div>
+    
+<div class="inner clearfix">
+    
+<div class="box">
+<div class="imglink"> 
+<a href="page01-kamata.html#ennraku">
+<img class="thum" src="img/img-ikegami-ennraku.jpg" alt="池上 とんかつ燕楽"/>
+<img class="viewmore" src="img/img-link-gray.png" alt="view more"/>
+</a>
+</div>
+<h4>池上 とんかつ燕楽</h4>
+</div>
+    
+<div class="box">
+<div class="imglink"> 
+<a href="page01-kamata.html#maruichi">
+<img class="thum" src="img/img-kamata-maruichi2.jpg" alt="蒲田 丸一"/>
+<img class="viewmore" src="img/img-link-gray.png" alt="view more"/>
+</a>
+</div>
+<h4>蒲田 とんかつ丸一</h4>
+</div>
+
+<div class="box">
+<div class="imglink"> 
+<a href="page01-kamata.html#aoki">
+<img class="thum" src="img/img-kamata-aoki.jpg" alt="蒲田 檍"/>
+<img class="viewmore" src="img/img-link-gray.png" alt="view more"/>
+</a>
+</div>
+<h4>蒲田 檍</h4>
+</div>
+
+<div class="box">
+<div class="imglink"> 
+<a href="page01-kamata.html#oomori-maruichi">
+<img class="thum" src="img/img-oomori-maruichi.jpg" alt="大森 丸一"/>
+<img class="viewmore" src="img/img-link-gray.png" alt="view more"/>
+</a>
+</div>
+<h4>大森　丸一</h4>
+</div>
+    
+<div class="box">
+<div class="imglink"> 
+<a href="page01-kamata.html#maruhachi">
+<img class="thum" src="img/img-oimachi-maruhachi.jpg" alt="大井町 丸八"/>
+<img class="viewmore" src="img/img-link-gray.png" alt="view more"/>
+</a>
+</div>
+<h4>大井町 丸八</h4>
+</div>
+    
+<div class="box">
+<div class="imglink"> 
+<a href="page01-kamata.html#suzubunn">
+<img class="thum" src="img/img-kamata-suzubunn.jpg" alt="蒲田 鈴文"/>
+<img class="viewmore" src="img/img-link-gray.png" alt="view more"/>
+</a>
+</div>
+<h4>蒲田 鈴文</h4>
+</div>
+
+</div>
+</section>
+    
+<div class="scroll-link">
+    <p><a href="#section2"><i class="fas fa-angle-down"></i></a></p>
+</div>
+    
+<section class="clearfix" id="section2">
+
+<div class="title clearfix">
+<h3>高田馬場・新宿</h3>
+</div>
+
+<div class="inner clearfix">
+<div class="box">
+<div class="imglink"> 
+<a href="page02-takadanobaba.html#narikura">
+<img class="thum" src="img/img-takadanobaba-narikura.jpg" alt="高田馬場 成蔵"/>
+<img class="viewmore" src="img/img-link-gray.png" alt="view more"/>
+</a>
+</div>
+<h4>高田馬場 成蔵</h4>
+</div>
+
+<div class="box">
+<div class="imglink"> 
+<a href="page02-takadanobaba.html#tonnta">
+<img class="thum" src="img/img-takadanobaba-tonnta.jpg" alt="高田馬場 とん太"/>
+<img class="viewmore" src="img/img-link-gray.png" alt="view more"/>
+</a>
+</div>
+<h4>高田馬場 とん太</h4>
+</div>
+
+<div class="box">
+<div class="imglink"> 
+<a href="page02-takadanobaba.html#tonkyu">
+<img class="thum" src="img/img-takadanobaba-tonkyu.jpg" alt="高田馬場 とん久"/>
+<img class="viewmore" src="img/img-link-gray.png" alt="view more"/>
+</a>
+</div>
+<h4>高田馬場 とん久</h4>
+</div>
+
+<div class="box">
+<div class="imglink"> 
+<a href="page02-takadanobaba.html#ouroji">
+<img class="thum" src="img/img-shinjuku-ouroji.jpg" alt="新宿 おうろじ"/>
+<img class="viewmore" src="img/img-link-gray.png" alt="view more"/>
+</a>
+</div>
+<h4>新宿 おうろじ</h4>
+</div>
+
+</div>
+</section>
+    
+<div class="scroll-link">
+    <p><a href="#section3"><i class="fas fa-angle-down"></i></a></p>
+</div>
+    
+<section class="clearfix" id="section3">
+
+<div class="title clearfix">
+<h3>上野・秋葉原</h3>
+</div>
+
+<div class="inner clearfix">
+<div class="box">
+<div class="imglink"> 
+<a href="page03-ueno.html#isenn">
+<img class="thum" src="img/img-ueno-isenn.jpg" alt="上野 井泉"/>
+<img class="viewmore" src="img/img-link-gray.png" alt="view more"/>
+</a>
+</div>
+<h4>上野 井泉</h4>
+</div>
+
+<div class="box">
+<div class="imglink"> 
+<a href="page03-ueno.html#marugo">
+<img class="thum" src="img/img-akihabara-marugo.jpg" alt="秋葉原 丸五"/>
+<img class="viewmore" src="img/img-link-gray.png" alt="view more"/>
+</a>
+</div>
+<h4>秋葉原 丸五</h4>
+</div>
+
+</div>
+</section>
+
+<div class="scroll-link">
+    <p><a href="#section4"><i class="fas fa-angle-down"></i></a></p>
+</div>
+    
+<section class="clearfix" id="section4">
+    
+<div class="title clearfix">
+<h3>その他 東京都内</h3>
+</div>
+
+<div class="inner clearfix">
+<div class="box">
+<div class="imglink"> 
+<a href="page04-others.html#taiyou">
+<img class="thum" src="img/img-musashikoyama-taiyou.jpg" alt="武蔵小山 たいよう"/>
+<img class="viewmore" src="img/img-link-gray.png" alt="view more"/>
+</a>
+</div>
+<h4>武蔵小山 たいよう</h4>
+</div>
+
+</div>
+</section>
+  
+<div class="scroll-link">
+    <p><a href="#section5"><i class="fas fa-angle-down"></i></a></p>
+</div>
+    
+<section class="clearfix" id="section5">
+
+<div class="title clearfix">
+<h3>川崎・武蔵小杉</h3>
+</div>
+
+<div class="inner clearfix">
+<div class="box">
+<div class="imglink"> 
+<a href="page05-kawasaki.html#ton-q">
+<img class="thum" src="img/img-kawasaki-tonQ.jpg" alt="川崎 とんQ"/>
+<img class="viewmore" src="img/img-link-gray.png" alt="view more"/>
+</a>
+</div>
+<h4>川崎 とんQ</h4>
+</div>
+
+</div>
+</section>
+
+</main>
+<p class="pagetop"><a href="#index"><i class="fas fa-arrow-circle-up"></i></a></p>
+<footer>
+	<div class="inner">
+	<div class="icon">
+		<p><i class="fab fa-twitter-square"></i></p>
+		<p><i class="fab fa-facebook-square"></i></p>
+	</div>	
+	<p class="copyright">&copy;2018 Shoko.Oda</p>
+	</div>
+</footer>
+</body>
+</html>
