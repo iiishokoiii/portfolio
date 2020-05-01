@@ -231,7 +231,7 @@ section.w-bg {
   padding: 80px 0;
 }
 section.wo-bg {
-  padding: 20px 0;
+  padding: 0;
 }
 section .inner {
   width: 90%;
@@ -1299,39 +1299,28 @@ a.cl-hover:hover {
   #about .copy .inner {
     width: 80%;
   }
+  /*index-page*/
   #index-event .box,
   #gokitou-banner .box {
-    display: table;
     float: none;
-    margin: 30px 0;
-    width: 100%;
-    height: 80px;
-    text-align: left;
+    width: calc(90% - 2px);
+    max-width: 400px;
+    margin: 30px auto;
   }
   #index-event .box a .photo,
   #gokitou-banner .box a .photo {
-    display: table-cell;
-    height: 80px;
-    width: 30%;
-    float: left;
-  }
-  #index-event .box a .photo img,
-  #gokitou-banner .box a .photo img {
-    float: right;
-    height: 100%;
-    width: auto;
+    width: 100%;
+    display: block;
   }
   #index-event .box a .title,
   #gokitou-banner .box a .title {
-    float: left;
-    display: table-cell;
-    vertical-align: middle;
-    width: calc(70% - 46px);
-    height: 80px;
-    line-height: 80px;
-    padding: 0 20px;
-    border-top: none;
-    border-left: solid 5px #ddae67;
+    display: block;
+    border-top: solid 5px #ddae67;
+  }
+  #index-event .box a .photo img,
+  #gokitou-banner .box a .photo img {
+    width: 100%;
+    height: auto;
   }
   /*about-page*/
   section.w-bg {
@@ -1389,15 +1378,6 @@ a.cl-hover:hover {
     width: calc(100% - 50px);
     padding: 0 10px 0 40px;
     margin: 0 auto;
-  }
-  #gokitou-banner {
-    width: calc(100% - 40px);
-  }
-  #gokitou-banner .box {
-    float: none;
-    width: 100%;
-    max-width: 460px;
-    margin: 20px auto;
   }
   /*event-page*/
   #event .sec-box h4 .date {
@@ -1466,29 +1446,6 @@ a.cl-hover:hover {
   #omamori .photo-wrap .box {
     width: calc(50% - 20px);
     margin: 5px 10px;
-  }
-  /*index-page*/
-  #index-event .box {
-    display: block;
-    height: 160px;
-    width: calc(90% - 2px);
-    margin: 30px auto;
-  }
-  #index-event .box a .photo {
-    width: 100%;
-    float: none;
-    display: block;
-  }
-  #index-event .box a .title {
-    width: calc(100% - 42px);
-    float: none;
-    display: block;
-    border: solid 1px #aaa;
-    border-top: solid 5px #ddae67;
-  }
-  #index-event .box a .photo img {
-    width: 100%;
-    height: auto;
   }
 }
 /*#####responsive(min-width:960px)####*/
