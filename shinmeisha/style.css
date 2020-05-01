@@ -667,18 +667,20 @@ a.cl-hover:hover {
 }
 #about-sec1 {
   background-image: url(img/bg-img-page01-sec1.jpg);
-  padding-bottom: 200px;
 }
 #about-sec2 {
   background-color: #f9f9ef;
 }
 #about-sec3 {
   background-image: url(img/bg-img-page01-sec3.jpg);
-  padding-bottom: 200px;
 }
 #about-sec5 {
   background-image: url(img/bg-img-page06-hikouki.jpg);
-  padding-bottom: 200px;
+}
+#about-sec1,
+#about-sec3,
+#about-sec5 {
+  padding-bottom: 160px;
 }
 #about-sec6 .inner {
   background-image: url(img/img-page01-illust05.png);
@@ -1099,6 +1101,11 @@ a.cl-hover:hover {
     width: 130px;
     padding: 30px 10px 10px;
   }
+  #about-sec1,
+  #about-sec3,
+  #about-sec5 {
+    padding-bottom: 80px;
+  }
   /*gokitou-page*/
   #gokitou-sec1 .box-wrap {
     width: 100%;
@@ -1327,6 +1334,9 @@ a.cl-hover:hover {
     border-left: solid 5px #ddae67;
   }
   /*about-page*/
+  section.w-bg {
+    padding: 30px 0 50px;
+  }
   #about .copy .inner {
     width: 80%;
     max-width: 300px;
@@ -1341,6 +1351,11 @@ a.cl-hover:hover {
     margin: 20px auto 0;
     width: 70%;
     background-size: contain;
+  }
+  #about-sec1,
+  #about-sec3,
+  #about-sec5 {
+    padding-bottom: 50px;
   }
   #about-sec6 .inner {
     background-size: 70%;
