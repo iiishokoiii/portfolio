@@ -348,7 +348,7 @@ section .inner .sub {
 }
 .photo-wrap .box img,
 .photo-c-wrap .box img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 .photo-wrap .box p,
@@ -392,9 +392,6 @@ section .inner .sub {
 }
 #omamori .photo-wrap .box {
   padding-bottom: 60px;
-}
-#omamori .photo-wrap .box .text {
-  max-width: 160px;
 }
 /*--footer--*/
 footer {
@@ -1442,6 +1439,7 @@ a.cl-hover:hover {
     float: none;
     margin: 5px auto;
     width: 90%;
+    max-width: 300px;
   }
   #omamori .photo-wrap .box {
     width: calc(50% - 20px);
