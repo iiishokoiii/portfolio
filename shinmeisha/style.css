@@ -241,6 +241,9 @@ section .inner {
   background-color: #fff;
   opacity: 0.95;
 }
+section .inner--box {
+  padding: 30px 20px;
+}
 section .inner .sub {
   width: 600px;
   margin: 40px auto 0;
@@ -973,7 +976,6 @@ a.cl-hover:hover {
     opacity: 0.97;
     margin: 0 auto;
     position: fixed;
-    border-bottom: 1px solid #333;
     top: 60px;
   }
   .nav-wrap {
@@ -1068,7 +1070,7 @@ a.cl-hover:hover {
   }
   /*indx-page*/
   #index .bg-main {
-    height: calc(100vh - 60px);
+    height: calc(50vh - 60px);
     width: auto;
     padding-top: 0;
     background-position: center top;
@@ -1196,7 +1198,7 @@ a.cl-hover:hover {
     padding: 60px 0;
   }
   nav {
-    height: calc(100vh - 62px);
+    height: calc(100vh - 60px);
     overflow: auto;
   }
   .nav-wrap {
