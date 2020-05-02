@@ -14,7 +14,7 @@
     <!--favicon-->
     <link rel="icon" type="image/vnd.microsoft.icon" href="img/favicon.ico" />
     <!--script-->
-    <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="js/jquery-3.5.0.min.js"></script>
     <script type="text/javascript" src="js/jquery.smoothscroll.js"></script>
     <script type="text/javascript" src="js/bakerycafe.js"></script>
     <!--css-->
@@ -53,7 +53,9 @@
     <main>
       <section id="main" class="clearfix">
         <h2 class="copy">Bakery &amp; Cafe</h2>
-        <p class="scrl-down"><a href="#concept">Scroll down</a></p>
+        <p class="scrl-down">
+          <a href="#concept"><span>Scroll down</span></a>
+        </p>
       </section>
 
       <section id="concept" class="clearfix">
@@ -76,13 +78,27 @@
           <h3>Menu</h3>
           <ul id="menulist">
             <li class="menu-tab active" id="menu-tab01">
-              <span class="bg-col1">Breakfast<br />08:00-11:00</span>
+              <div class="menu-tab__txt bg-col1">
+                <div class="menu-tab__txt__inr">
+                  <span class="menu-tab__txt__ttl">Breakfast</span
+                  ><br />08:00-11:00
+                </div>
+              </div>
             </li>
             <li class="menu-tab" id="menu-tab02">
-              <span class="bg-col2">Lunch<br />11:00-15:00</span>
+              <div class="menu-tab__txt bg-col2">
+                <div class="menu-tab__txt__inr">
+                  <span class="menu-tab__txt__ttl">Lunch</span><br />11:00-15:00
+                </div>
+              </div>
             </li>
             <li class="menu-tab" id="menu-tab03">
-              <span class="bg-col3">Cafe Time<br />11:00-18:00</span>
+              <div class="menu-tab__txt bg-col3">
+                <div class="menu-tab__txt__inr">
+                  <span class="menu-tab__txt__ttl">Cafe Time</span
+                  ><br />11:00-18:00
+                </div>
+              </div>
             </li>
           </ul>
         </div>
@@ -201,7 +217,6 @@
           </ul>
         </div>
         <p class="caution">※表示価格は税抜価格となります。</p>
-        <p class="scrl-down"><a href="#shop-info">Scroll down</a></p>
       </div>
 
       <section id="shop-info" class="clearfix">
@@ -216,7 +231,6 @@
             08:00-22:00 / 定休日 日祝<br />
           </p>
         </div>
-        <p class="scrl-down"><a href="#footer">Scroll down</a></p>
       </section>
     </main>
 

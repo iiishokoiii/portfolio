@@ -141,7 +141,7 @@ nav .nav1 a:hover:after {
   position: absolute;
   z-index: 9999;
   right: 15px;
-  top: 30px;
+  top: 20px;
   width: 30px;
   height: 40px;
   cursor: pointer;
@@ -196,13 +196,22 @@ nav .nav1 a:hover:after {
 .scrl-down a {
   font-weight: 700;
 }
-#main .scrl-down a,
-#concept .scrl-down a,
-#shop-info .scrl-down a {
-  color: #fff;
+.scrl-down span::after {
+  left: 3px;
+  width: 4px;
+  height: 4px;
+  border-top: 2px solid #7a0;
+  border-right: 2px solid #7a0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
-#menu-content .scrl-down a {
-  color: #000;
+#main .scrl-down a {
+  color: #333;
+  display: inline-block;
+  background-color: #fff;
+  opacity: 0.85;
+  padding: 5px 10px;
+  border-radius: 5px;
 }
 /*secion*/
 section {
@@ -284,35 +293,44 @@ li.menu-tab {
   background-image: url(img/bg-menu-cafe.jpg);
 }
 .bg-col1 {
-  background-color: #f4ebe2;
+  background-color: #e7d8c9;
 }
 .bg-col2 {
-  background-color: #ecf4e2;
+  background-color: #e6beae;
 }
 .bg-col3 {
-  background-color: #e2e6f4;
+  background-color: #b2967d;
 }
-.menu-tab span {
+.menu-tab__txt {
   position: absolute;
   bottom: 0;
   display: block;
   color: #333;
   padding: 10px 0;
-  width: calc(100% - 2px);
-  border-right: 1px solid #eee;
-  border-left: 1px solid #eee;
+  width: 100%;
   text-align: center;
   opacity: 1;
+}
+.menu-tab__txt__inr {
+  display: inline-block;
+  padding: 5px 0;
+  width: 90%;
+  background: #fff;
+  border-radius: 5px;
+}
+.menu-tab__txt__ttl {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.6rem;
+  font-weight: bold;
 }
 .menu-tab:hover {
   opacity: 0.8;
 }
-
 /*menu-content*/
 #menu-content {
   margin: 0 auto;
   position: relative;
-  padding: 40px 0 80px;
+  padding: 40px 0 60px;
 }
 #menu-content .inner {
   width: 70%;
@@ -423,8 +441,6 @@ footer .map iframe {
 footer .inner {
   width: 100%;
   background-color: #777;
-  position: absolute;
-  bottom: 0;
   color: #fff;
   padding: 40px 0;
 }
@@ -456,8 +472,11 @@ footer a {
     display: block;
   }
   /*navi*/
+  header {
+    padding: 0;
+  }
   header h1 {
-    margin: 20px 40px;
+    margin: 20px;
   }
   #menu-btn {
     display: block;
@@ -563,9 +582,6 @@ footer a {
     float: none;
     width: 90%;
     margin: 30px auto;
-  }
-  header h1 {
-    margin: 20px 10px;
   }
   nav .nav1 li {
     float: none;
