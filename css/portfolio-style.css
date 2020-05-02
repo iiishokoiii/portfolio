@@ -247,10 +247,8 @@ p {
   position: relative;
 }
 .c-item__img--circle {
-  border-radius: 50%;
-  background-color: #fff;
   width: 25%;
-  margin-left: 5%;
+  margin-right: 5%;
 }
 .c-item__img img {
   max-width: 100%;
